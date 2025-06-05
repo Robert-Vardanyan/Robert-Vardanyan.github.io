@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rova Coder</title>
+  <link rel="stylesheet" href="style.css" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
   />
-    
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a2e0b73b5e.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -33,39 +28,39 @@
     </nav>
   </header>
 
-  <main>
-    <!-- Здесь будет наполнение для home, projects, about, contact -->
+  <main id="home">
+    <section class="hero">
+      <h1>Добро пожаловать на сайт Rova Coder</h1>
+      <p>Python разработка, проекты и статьи.</p>
+    </section>
   </main>
 
   <footer>
     <div class="footer-content">
-      <div class="footer-brand">Rova</div>
-      <div class="footer-columns">
-        <div class="social">
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-telegram"></i></a>
-        </div>
-        <div class="latest-posts">
-          <h4>Последние посты</h4>
-          <ul>
-            <li><a href="#">Как я создал своего Telegram-бота</a></li>
-            <li><a href="#">Парсинг Instagram с Python</a></li>
-            <li><a href="#">Создание игры на Pygame</a></li>
-          </ul>
-        </div>
-        <div class="footer-pages">
-          <h4>Страницы</h4>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Проекты</a></li>
-            <li><a href="#about">О себе</a></li>
-            <li><a href="#contact">Контакты</a></li>
-          </ul>
-        </div>
+      <div class="footer-logo">Rova</div>
+      <div class="social-icons">
+        <a href="https://github.com/Robert-Vardanyan" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://t.me/rova_coder" target="_blank"><i class="fab fa-telegram"></i></a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Rova Coder. Все права защищены.</p>
       </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-theme');
+    });
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
