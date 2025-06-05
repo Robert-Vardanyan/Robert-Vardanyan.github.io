@@ -1,82 +1,66 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rova Coder</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f9f9f9;
-      color: #111;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5em;
-    }
-    p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin-bottom: 2em;
-      line-height: 1.5;
-    }
-    .links a {
-      display: inline-block;
-      margin: 0.5em;
-      padding: 0.75em 1.5em;
-      border: 2px solid #111;
-      border-radius: 8px;
-      color: #111;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      font-weight: bold;
-    }
-    .links a:hover {
-      background-color: #111;
-      color: #fff;
-    }
-    footer {
-      margin-top: 3em;
-      font-size: 0.9rem;
-      color: #777;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
-      p {
-        font-size: 1rem;
-      }
-      .links a {
-        width: 80%;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0b73b5e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>Rova Coder</h1>
-  <p>
-    Привет! Я — Junior Python-разработчик из Армении.  
-    Работаю с Telegram-ботами, парсерами и автоматизацией.  
-    Открыт к сотрудничеству и новым проектам.
-  </p>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Rova</div>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#projects">Проекты</a>
+        <a href="#about">О себе</a>
+        <a href="#contact">Контакты</a>
+      </div>
+      <div class="icons">
+        <button id="themeToggle"><i class="fas fa-moon"></i></button>
+        <button id="searchToggle"><i class="fas fa-search"></i></button>
+        <div class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></div>
+      </div>
+    </nav>
+  </header>
 
-  <div class="links">
-    <a href="https://github.com/Robert-Vardanyan" target="_blank">GitHub</a>
-    <a href="https://t.me/rova_coder" target="_blank">Telegram</a>
-  </div>
+  <main>
+    <!-- Здесь будет наполнение для home, projects, about, contact -->
+  </main>
 
-  <footer>© 2025 Rova Coder</footer>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">Rova</div>
+      <div class="footer-columns">
+        <div class="social">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+        </div>
+        <div class="latest-posts">
+          <h4>Последние посты</h4>
+          <ul>
+            <li><a href="#">Как я создал своего Telegram-бота</a></li>
+            <li><a href="#">Парсинг Instagram с Python</a></li>
+            <li><a href="#">Создание игры на Pygame</a></li>
+          </ul>
+        </div>
+        <div class="footer-pages">
+          <h4>Страницы</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#about">О себе</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
