@@ -25,6 +25,12 @@
         <button id="searchToggle"><i class="fas fa-search"></i></button>
         <div class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></div>
       </div>
+      <!-- ДОБАВЬ в <body> после <div class="icons"> -->
+
+      <div class="search-box" id="searchBox">
+        <input type="text" placeholder="Поиск..." id="searchInput" />
+        <button id="searchClose"><i class="fas fa-times"></i></button>
+      </div>
     </nav>
   </header>
 
@@ -54,6 +60,10 @@
     const menuToggle = document.getElementById('menuToggle');
     const navLinks = document.getElementById('navLinks');
 
+    const searchToggle = document.getElementById('searchToggle');
+    const searchBox = document.getElementById('searchBox');
+    const searchClose = document.getElementById('searchClose');
+
     themeToggle.addEventListener('click', () => {
       body.classList.toggle('dark-theme');
     });
@@ -61,6 +71,15 @@
     menuToggle.addEventListener('click', () => {
       navLinks.classList.toggle('active');
     });
+
+    searchToggle.addEventListener('click', () => {
+      searchBox.style.display = 'flex';
+    });
+
+    searchClose.addEventListener('click', () => {
+      searchBox.style.display = 'none';
+    });
   </script>
+
 </body>
 </html>
