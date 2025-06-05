@@ -1,7 +1,75 @@
-<html>
-  <head><title>Мой сайт</title></head>
-  <body>
-    <h1>Привет, я Python-разработчик</h1>
-    <p>Добро пожаловать в моё портфолио!</p>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rova Coder – Python Developer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      justify-content: center;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto 2em;
+    }
+    .buttons a {
+      text-decoration: none;
+      color: white;
+      background: #333;
+      padding: 12px 24px;
+      margin: 0 10px;
+      border-radius: 8px;
+      transition: background 0.3s;
+      display: inline-block;
+    }
+    .buttons a:hover {
+      background: #555;
+    }
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.8em;
+      color: #999;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1em;
+      }
+      .buttons a {
+        display: block;
+        margin: 10px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Rova Coder</h1>
+  <p>Junior Python-разработчик из Армении. Работаю с Telegram-ботами, парсерами и автоматизацией.  
+  Открыт к сотрудничеству и новым проектам.</p>
+  <div class="buttons">
+    <a href="https://github.com/Robert-Vardanyan" target="_blank">GitHub</a>
+    <a href="https://t.me/rova_coder" target="_blank">Telegram</a>
+  </div>
+  <footer>
+    © 2025 Rova Coder
+  </footer>
+</body>
 </html>
